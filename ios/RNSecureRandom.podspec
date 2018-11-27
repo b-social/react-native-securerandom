@@ -4,7 +4,7 @@ package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
   s.name         = "RNSecureRandom"
-  s.version      = "0.1"
+  s.version      = package["version"]
   s.summary      = "RNSecureRandom"
   s.description  = package["description"]
   s.homepage     = package["homepage"]
